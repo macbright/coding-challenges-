@@ -1,7 +1,7 @@
 # coding-challenges-
 This is a compilation of coding challenges i solved during my ruby course and javascript. feel free to contribute and share your approach to the challenges.
 
-# 1 A Tree in an Array
+# 1)  A Tree in an Array
     To store a Binary Tree in an Array, we just need to determine the order  that we store the Nodes in. A good order is "breadth-first" where we  store the items in order top-down and left-to-right of the tree.
 
     Here's a tree represented as an array:
@@ -19,7 +19,7 @@ This is a compilation of coding challenges i solved during my ruby course and ja
 
     # my solution file name "tree_sum_of_the_outermost_left.rb" inside data structure file.
 
-# Creating a Tree
+# 2)  Creating a Tree
     Creating a Tree
 
     The previous challenge showed how to store a Tree in an Array. But how do you convert a Tree from an Array to the more-standard Node form? 
@@ -85,3 +85,18 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     puts post_order(tree)
     #=> 3 4 1 5 6 2 
     # my solution file name "creating_tree.rb" in the data structure file.
+
+# 3)   Binary Search Tree
+    The Binary Search Tree is a a Binary Tree which stores keys in a sorted manner. Every node's key is smaller than all the key's in the node's left subtree and greater than all the key's in the nodes right subtree. Here's an example:
+
+
+    Inserting Elements in the Tree
+    Insertion and Search can usually be done very quickly in a binary Tree. The smallest and largest elements in the tree are easy to find. It's simple to go from one element to the next in the tree and to through the entire Tree in order.
+
+
+    Challenge
+    You will be given an array of numbers as input. Insert the numbers (in order) one-at-a-time into a binary search tree. Then return a string with the tree in pre-order (You can use the pre-order function that you wrote in the previous lesson).
+
+    binary_search_tree([8, 3, 10, 1, 6, 14, 4, 7, 13])
+    # => "8 3 1 6 4 7 10 14 13"
+    MY SOLUTION IN FILE "binary_search_tree.rb" in the data structure folder
