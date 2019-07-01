@@ -137,8 +137,9 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     MY SOLUTION FILE "graphs.rb" INSIDE THE DATA STRUCTURE FOLDER
 
 # Breadth-First Search
+![bfs image]['https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif']
     BFS begins at one node in a graph and visits all the neighboring nodes. It then goes to each of those neighbors to explore their unvisited neighbors in order. So it goes through the entire graph one level at a time, until the whole graph has been visited.
-    ![bfs image]['https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif']
+    
 
     BFS goes through the Nodes one level at a time, so you need a structure to keep track of the next nodes to be processed.
 
