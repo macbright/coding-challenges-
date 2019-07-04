@@ -185,3 +185,22 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     Explanation
     For this challenge, visit equivalent nodes in the same order as their input. For example, 5 comes before 3 in the output since it was before 3 in the input.
     MY SOLUTION FILE "data_structures/dfs.rb" in DATA STRUCTURE FOLDER
+
+# How Tall is the Tree?
+    Can you find the height of a Binary Tree? The height is the number of Nodes from the Root to the lowest Leaf. The Tree does not need to be balanced.
+
+    For example, in the tree below, the height is 4:
+
+
+    Challenge
+    Return the height of the Tree.
+
+    Example
+
+    array_tree = [2, 7, 5, 2, 6, 0, 9]
+
+    puts binary_tree_height(array_tree)
+    => 3
+    MY SOLUTION FILE "data_structures/tree_height.rb" in the data structure folder
+    
+
