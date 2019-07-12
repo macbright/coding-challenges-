@@ -247,3 +247,27 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     # => false
 
     MY SOLUTION FILE "is_it_balanced.rb" inside the data structure folder.
+
+# Connected Components (Graph)
+    Are all the components connected on the given Graph?
+
+    A graph is considered one connected component if every node is connected along a path with every other node.
+
+    The following graph is not one connected component, since the 1 and 4 cannot be reached from the 0,2,3 and 5.
+
+    Challenge
+    Given a graph, return true if the graph is one connected component, and false otherwise.
+
+    Example
+    graph = {
+    0 => [2], 
+    1 => [4], 
+    2 => [0, 5, 3], 
+    3 => [5, 2], 
+    4 => [5, 1], 
+    5 => [4, 2, 3]
+    }
+
+    puts connected_graph?(graph)
+    # => true
+    MY SOLUTION FILE "connect_component.rb" inside the data structure folder.
