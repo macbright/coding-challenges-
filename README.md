@@ -322,3 +322,24 @@ This is a compilation of coding challenges i solved during my ruby course and ja
 
     p find_duplicates(arr)
     # => [1, 5, 2]
+
+# Maps
+
+    A Map is also known as a Dictionary, since it can be used to store items in a similar manner as a dictionary, where each word maps to a specific definition. These are the basic methods of a Map:
+    [key] = value - Adds the key and value to the map, so they are now associated with each other. If this key was already in the Map, it will now point to the new value only.
+    [key] - Returns the value that the key maps to.
+    delete(key) - Removes the key-value mapping of this key from the map.
+    has_key?(key) - This returns true if the key is in the map and false otherwise (like the contains method of Set).
+
+    Map in Ruby
+    Ruby standard library has the class Hash.
+    https://ruby-doc.org/core/Hash.html
+
+    Challenge
+    Return the number in each list that appears the most times.
+
+    Example
+    array = [1, 2, 3, 1, 5]
+
+    appears_most_times(array)
+    # => 1
