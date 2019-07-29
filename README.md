@@ -401,3 +401,46 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     Example
     hash_table([12, 24, 125, 5, 91, 1106, 2, 1021, 29, 3536, 10])
     # => [12, 24, 2, 91, 125, 5, 3536, 1106, 29, 1021, 10]
+
+# Set
+
+    The Set is able to add, find and remove items in constant time, so it can solve many problems in an optimal manner. 
+
+    A Set is a good choice whenever you have a large set of items and need to quickly check if a given item is in the set or not. We already saw that this can be used to detect duplicate data as you go through a list of numbers. It is often used to check live user data against established data for matches. For example, a Spell Checker that checks words as a user types them needs to extremely fast, so it uses a Set of real words to check if a given word is real or not. Here's a list of different cases where a Set could be used:
+
+    When not to use a Set
+
+    While a Set is great for quickly looking up items, sometimes other data structures are a better choice. For example, let's say you were implementing an autocomplete feature to suggest searches as a user types. To do this with a Set, you would need to store every prefix of a search as a separate entry, which would waste a lot of memory. For such cases, the Trie is a better choice of data structure.
+
+    More information about the Trie: https://en.wikipedia.org/wiki/Trie
+
+    Challenge
+    Given a list of numbers, return how many are prime numbers are in the list. (A prime number is a number with no factors besides 1 and itself.)
+
+    Sample Input
+
+    2 3 5 6 9
+
+    Sample Output
+
+    3
+
+    There are 3 prime numbers in the input: 2 3 5.
+
+    Constraints
+
+    All the numbers will be from 2 to 10,000.
+
+    Guideline
+
+    Create a Set of prime numbers less than 10,000. There are 2 ways you can do this:
+    Use the Sieve of Eratosthenes, then create a set of the prime numbers from your sieve.
+    Google it to find the values, hard-code an array with those numbers, and then copy the array values to a Set.
+    Once you have this Set, the next part is easy.
+
+    More about the Sieve of Eratosthenes: http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+
+    Example
+    puts number_of_primes([2, 3, 5, 6, 9])
+    # => 3
+
