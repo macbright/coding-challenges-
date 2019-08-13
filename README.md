@@ -549,3 +549,31 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     # => 4
 
     MY SOLUTION FILE "running_time.rb" inside the sorting folder.
+
+# Counting Sort 1
+
+    We will start with an easy task - counting.
+
+    Given a list of integers, can you count and return the number of times each value appears?
+    There is no need to sort the data, you just need to count it.
+
+    Input
+
+    The Input will be an array of numbers.
+
+    Output:
+
+    Output the number of times every number from 0 to 99 (inclusive) appears in the list.
+
+    Example
+    p counting_sort([63, 25, 73, 1, 98, 73, 56, 84, 86, 57, 16, 83, 8, 25, 81, 56, 9, 53, 98, 67, 99, 12, 83, 89, 80, 91, 39, 86, 76, 85, 74, 39, 25, 90, 59, 10, 94, 32, 44, 3, 89, 30, 27, 79, 46, 96, 27, 32, 18, 21, 92, 69, 81, 40, 40, 34, 68, 78, 24, 87, 42, 69, 23, 41, 78, 22, 6, 90, 99, 89, 50, 30, 20, 1, 43, 3, 70, 95, 33, 46, 44, 9, 69, 48, 33, 60, 65, 16, 82, 67, 61, 32, 21, 79, 75, 75, 13, 87, 70, 33])
+    # => [0, 2, 0, 2, 0, 0, 1, 0, 1, 2, 1, 0, 1, 1, 0, 0, 2, 0, 1, 0, 1, 2, 1, 1, 1, 3, 0, 2, 0, 0, 2, 0, 3, 3, 1, 0, 0, 0, 0, 2, 2, 1, 1, 1, 2, 0, 2, 0, 1, 0, 1, 0, 0, 1, 0, 0, 2, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 2, 1, 3, 2, 0, 0, 2, 1, 2, 1, 0, 2, 2, 1, 2, 1, 2, 1, 1, 2, 2, 0, 3, 2, 1, 1, 0, 1, 1, 1, 0, 2, 2]
+
+    Input/Output Explanation
+
+    There were zero 0's in the input, so the zeroth number of output is "0". There were two 1's, so the next number is 2. Etc...
+
+    Challenge
+    Return an Array with the number of times each value appears.
+
+    MY SOLUTION FILE "counting_sort_1.rb" inside the sorting folder.
