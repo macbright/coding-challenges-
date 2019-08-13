@@ -593,3 +593,28 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     # => [1, 1, 3, 3, 6, 8, 9, 9, 10, 12, 13, 16, 16, 18, 20, 21, 21, 22, 23, 24, 25, 25, 25, 27, 27, 30, 30, 32, 32, 32, 33, 33, 33, 34, 39, 39, 40, 40, 41, 42, 43, 44, 44, 46, 46, 48, 50, 53, 56, 56, 57, 59, 60, 61, 63, 65, 67, 67, 68, 69, 69, 69, 70, 70, 73, 73, 74, 75, 75, 76, 78, 78, 79, 79, 80, 81, 81, 82, 83, 83, 84, 85, 86, 86, 87, 87, 89, 89, 89, 90, 90, 91, 92, 94, 95, 96, 98, 98, 99, 99]
 
      MY SOLUTION FILE "simple.counting_sort.rb" inside the sorting folder.
+
+# Prepare for Full Counting Sort
+
+    In the previous challenge, it was easy to print all the integers in order, since you did not need to access the original list. Once you had the frequencies of each integer, you could just print each integer in order the correct number of times. However, if there is other data associated with an element, you will need to access the original element itself.
+
+    In the final counting sort challenge, you will need to print the data associated with each integer. This means you will go through the original array to get the data, and then use some “helper arrays” to determine where to place everything in a sorted array.
+
+    You will be given a list that contains both integers and strings. In this challenge you just care about the integers. For every value i from 0 to 99, can you output L, the number of elements that are less than or equal to i?
+
+    Input Format
+
+    array - an array where each position contain an integer x, and a string, s.
+
+    Output Format
+
+    Output L for all numbers from 0 to 99 (inclusive).
+
+    Challenge
+    For every value i from 0 to 99, can you return an array L, with the number of elements that are less than or equal to i?
+
+    Example
+    p full_counting_sort_prep(["4 that", "3 be", "0 to", "1 be", "5 question", "1 or", "2 not", "4 is", "2 to", "4 the"])
+    # => [1, 3, 5, 6, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+
+     MY SOLUTION FILE "full_counting_sort.rb" inside the sorting folder.
