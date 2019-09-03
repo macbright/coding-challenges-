@@ -784,3 +784,15 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     Example
     p full_merge_sort(["0 ab", "6 cd", "0 ef", "6 gh", "4 ij", "0 ab", "6 cd", "0 ef", "6 gh", "0 ij", "4 that", "3 be", "0 to", "1 be", "5 question", "1 or", "2 not", "4 is", "2 to", "4 the"])
     # => ["ab", "ef", "ab", "ef", "ij", "to", "be", "or", "not", "to", "be", "ij", "that", "is", "the", "question", "cd", "gh", "cd", "gh"]
+
+# Index Match
+
+    Given a sorted array of integers with no duplicates, find the spot where array[i] == i.
+    It's super-easy to find a solution in O(n) time, but can you code an O(log n) solution?
+
+    Challenge
+    Return the index where they match, or -1 if there is none.
+
+    Example
+    puts index_match([0, 2, 3, 7, 9, 11])
+    # => 0
