@@ -828,3 +828,43 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     Example
     p time_scheduler([4, 8, 1, 3, 7, 9, 5, 6])
     # => [[1,3], [5,6], [7,9]]
+
+# Maximum Time Range
+
+    You're only able to stay in the hotel if an event is running. Can you find and return an array with the maximum time ranges that you can stay in the hotel?
+
+    In this challenge, instead of avoiding overlapping times, you want them!
+
+    See if you can find an O(n log n) solution.
+
+    I/O Format
+    The input is the same as the last challenge. Find the optimal range of times of events and return each range like this: [start , end].
+
+    Sample Input
+
+    [10, 18, 4, 6, 14, 16, 5, 8]
+
+    Sample Output
+
+    [[4, 8], [10, 18]]
+
+    Explanation
+
+    You are given 4 events:
+
+    [[10,18], [4,6], [14,16], [5,8]]
+
+    [4,8] [10,18] is the maximum time ranges within those times.
+
+    Time    0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20...
+    Events              aaaaaaa            cccccccccccccccccccccccc
+                        bbbbbbbbbb                 ddddddd
+    Max.                -------------      ------------------------
+
+
+    Challenge
+    Return an array with the maximum ranges.
+
+    Example
+    p maximum_time_range([10, 18, 4, 6, 14, 16, 5, 8])
+    # => [[4, 8], [10, 18]]
