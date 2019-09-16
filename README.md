@@ -891,3 +891,30 @@ This is a compilation of coding challenges i solved during my ruby course and ja
 
     Input/Output Explanation
     30 - -20 = 50, which is the smallest difference.
+
+# The Median
+
+    In the Quicksort challenges, you sorted an entire array. Sometimes, you just need specific information about a list of numbers, and doing a full sort would be unnecessary. Can you figure out a way to use your partition code to find the median in an array?
+
+    Challenge
+
+    Given a list of numbers, can you find the median? The purpose of this challenge is to find the median without needing to sort all the elements.
+
+    Constraints
+
+    There will be less than 15,000 elements. There will be an odd number of elements. There may be duplicate numbers.
+
+    Output
+
+    Output one integer, the median.
+
+    Running Time
+
+    Your code should run in O(n) time.
+
+    Challenge
+    Find the Median in a list of numbers.
+
+    Example
+    puts median([0, 1, 2, 4, 6, 5, 3])
+    # => 3
