@@ -868,3 +868,26 @@ This is a compilation of coding challenges i solved during my ruby course and ja
     Example
     p maximum_time_range([10, 18, 4, 6, 14, 16, 5, 8])
     # => [[4, 8], [10, 18]]
+
+# Smallest Difference
+
+    Sorting is often useful as the first step in many different tasks. The most common task may to be make things easier to find later, but there are other uses also.
+
+    Challenge
+
+    Given a list of unsorted numbers, can you find the pair of numbers that have the smallest difference between them?
+
+    Output
+
+    Return an array with the pair of numbers with the smallest difference. The smaller number should be before the larger number.
+
+    Challenge
+
+    Return an array with the pair of numbers with the smallest difference.
+
+    Example
+    smallest_difference([-20, -3916237, -357920, -3620601, 7374819, -7330761, 30, 6246457, -6461594, 266854])
+    # => [-20, 30]
+
+    Input/Output Explanation
+    30 - -20 = 50, which is the smallest difference.
